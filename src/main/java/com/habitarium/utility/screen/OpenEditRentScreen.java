@@ -2,6 +2,7 @@ package com.habitarium.utility.screen;
 
 import com.habitarium.App;
 import com.habitarium.controller.edit.EditRentController;
+import com.habitarium.utility.Icon;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -28,7 +29,7 @@ public class OpenEditRentScreen implements OpenScreens {
             EditRentController editRentController = fxmlLoader.getController();
             editRentController.initializeScreen(rent);
             Stage stage = new Stage();
-//            Icon.setIcon(stage, "icon.png");
+            Icon.setIcon(stage, "icon.png");
             stage.setTitle(title);
             stage.setScene(new Scene(root));
             stage.setResizable(false);

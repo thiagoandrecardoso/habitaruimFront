@@ -2,6 +2,7 @@ package com.habitarium.utility.screen;
 
 import com.habitarium.App;
 import com.habitarium.controller.screen.FirstLoginScreenController;
+import com.habitarium.utility.Icon;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -27,7 +28,7 @@ public class OpenFirstLoginScreen implements OpenScreens {
             FirstLoginScreenController firstLoginScreenController = loader.getController();
             firstLoginScreenController.setUser(user);
             Stage stage = new Stage();
-//            Icon.setIcon(stage, "icon.png");
+            Icon.setIcon(stage, "icon.png");
             stage.setTitle(title);
             stage.setScene(new Scene(root));
             stage.setResizable(false);

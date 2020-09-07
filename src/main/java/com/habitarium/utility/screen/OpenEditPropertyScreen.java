@@ -3,6 +3,7 @@ package com.habitarium.utility.screen;
 
 import com.habitarium.App;
 import com.habitarium.controller.edit.EditPropertyController;
+import com.habitarium.utility.Icon;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -29,7 +30,7 @@ public class OpenEditPropertyScreen implements OpenScreens {
             EditPropertyController editPropertyController = fxmlLoader.getController();
             editPropertyController.initializeScreen(property);
             Stage stage = new Stage();
-//            Icon.setIcon(stage, "icon.png");
+            Icon.setIcon(stage, "icon.png");
             stage.setTitle(title);
             stage.setScene(new Scene(root));
             stage.setResizable(false);

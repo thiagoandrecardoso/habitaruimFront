@@ -10,7 +10,7 @@ public class AlertScreens {
     public static void alert(Alert.AlertType alertType, String contentText, String headerText) {
         Alert alert = new Alert(alertType, contentText, ButtonType.OK);
         Stage stage = (Stage) alert.getDialogPane().getScene().getWindow();
-        Icon.setIcon(stage, "/main/resources/com/habitarium/icon.png");
+        Icon.setIcon(stage, "icon.png");
         alert.setTitle("");
         alert.setHeaderText(headerText);
         alert.show();

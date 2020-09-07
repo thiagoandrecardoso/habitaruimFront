@@ -1,5 +1,6 @@
 package com.habitarium;
 
+import com.habitarium.utility.Icon;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -17,6 +18,7 @@ public class App extends Application {
     public void start(Stage stage) throws IOException {
         Scene scene = new Scene(loadFXML("screen/loginScreen"));
         stage.setScene(scene);
+        Icon.setIcon(stage, "icon.png");
         stage.setTitle("Login");
         stage.setResizable(false);
         stage.show();
