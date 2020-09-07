@@ -1,5 +1,6 @@
-package main.java.com.habitarium.controller.register;
+package com.habitarium.controller.register;
 
+import com.habitarium.utility.screen.AlertScreens;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
@@ -9,7 +10,6 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-import main.java.com.habitarium.utility.screen.AlertScreens;
 import main.java.dao.PropertyDAO;
 import main.java.entity.Property;
 

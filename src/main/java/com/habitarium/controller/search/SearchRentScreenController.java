@@ -1,6 +1,9 @@
-package main.java.com.habitarium.controller.search;
+package com.habitarium.controller.search;
 
 
+import com.habitarium.utility.screen.OpenEditRentScreen;
+import com.habitarium.utility.screen.OpenScreens;
+import com.habitarium.utility.screen.Reloadable;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -8,9 +11,6 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
-import main.java.com.habitarium.utility.screen.OpenEditRentScreen;
-import main.java.com.habitarium.utility.screen.OpenScreens;
-import main.java.com.habitarium.utility.screen.Reloadable;
 import main.java.dao.RentDAO;
 import main.java.entity.Rent;
 import me.xdrop.fuzzywuzzy.FuzzySearch;

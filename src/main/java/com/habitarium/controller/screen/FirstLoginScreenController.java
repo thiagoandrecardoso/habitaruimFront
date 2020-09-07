@@ -1,5 +1,7 @@
-package main.java.com.habitarium.controller.screen;
+package com.habitarium.controller.screen;
 
+import com.habitarium.utility.screen.AlertScreens;
+import com.habitarium.utility.screen.ScreenUtils;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -7,8 +9,6 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Tooltip;
 import javafx.stage.Stage;
-import main.java.com.habitarium.utility.screen.AlertScreens;
-import main.java.com.habitarium.utility.screen.ScreenUtils;
 import main.java.dao.UserDAO;
 import main.java.entity.User;
 

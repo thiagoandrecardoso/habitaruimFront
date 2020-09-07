@@ -1,4 +1,4 @@
-package main.java.com.habitarium.utility.screen;
+package com.habitarium.utility.screen;
 
 import java.io.IOException;
 

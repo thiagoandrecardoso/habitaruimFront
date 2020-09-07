@@ -1,9 +1,9 @@
-package main.java.com.habitarium.utility.screen;
+package com.habitarium.utility.screen;
 
+import com.habitarium.utility.Icon;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
 import javafx.stage.Stage;
-import main.java.com.habitarium.utility.Icon;
 
 public class AlertScreens {
 

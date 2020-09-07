@@ -1,14 +1,13 @@
-package main.java.com.habitarium.utility.screen;
+package com.habitarium.utility.screen;
 
 
+import com.habitarium.App;
+import com.habitarium.controller.edit.EditPropertyController;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-import main.java.com.habitarium.App;
-import main.java.com.habitarium.controller.edit.EditPropertyController;
-import main.java.com.habitarium.utility.Icon;
 import main.java.entity.Property;
 
 import java.io.IOException;

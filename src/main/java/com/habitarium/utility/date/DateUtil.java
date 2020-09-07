@@ -1,4 +1,4 @@
-package main.java.com.habitarium.utility.date;
+package com.habitarium.utility.date;
 
 import java.util.Calendar;
 import java.util.Date;

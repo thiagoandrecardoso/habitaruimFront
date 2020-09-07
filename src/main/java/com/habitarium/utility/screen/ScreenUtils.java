@@ -1,11 +1,11 @@
-package main.java.com.habitarium.utility.screen;
+package com.habitarium.utility.screen;
 
+import com.habitarium.App;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-import main.java.com.habitarium.App;
 
 import java.io.IOException;
 import java.net.URL;

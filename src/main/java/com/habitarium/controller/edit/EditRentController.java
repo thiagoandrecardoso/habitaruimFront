@@ -1,5 +1,10 @@
-package main.java.com.habitarium.controller.edit;
+package com.habitarium.controller.edit;
 
+import com.habitarium.utility.date.DateUtil;
+import com.habitarium.utility.screen.AlertScreens;
+import com.habitarium.utility.screen.OpenRegisterPaymentScreen;
+import com.habitarium.utility.screen.OpenScreens;
+import com.habitarium.utility.screen.Reloadable;
 import javafx.collections.FXCollections;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -7,11 +12,6 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
-import main.java.com.habitarium.utility.date.DateUtil;
-import main.java.com.habitarium.utility.screen.AlertScreens;
-import main.java.com.habitarium.utility.screen.OpenRegisterPaymentScreen;
-import main.java.com.habitarium.utility.screen.OpenScreens;
-import main.java.com.habitarium.utility.screen.Reloadable;
 import main.java.controller.MonthPaidController;
 import main.java.controller.RentController;
 import main.java.dao.LessorDAO;

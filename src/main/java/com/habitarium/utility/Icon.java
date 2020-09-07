@@ -1,6 +1,6 @@
-package main.java.com.habitarium.utility;
+package com.habitarium.utility;
 
-import main.java.com.habitarium.App;
+import com.habitarium.App;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 

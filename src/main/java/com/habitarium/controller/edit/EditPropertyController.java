@@ -1,11 +1,11 @@
-package main.java.com.habitarium.controller.edit;
+package com.habitarium.controller.edit;
 
+import com.habitarium.utility.screen.AlertScreens;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-import main.java.com.habitarium.utility.screen.AlertScreens;
 import main.java.dao.PropertyDAO;
 import main.java.entity.Property;
 

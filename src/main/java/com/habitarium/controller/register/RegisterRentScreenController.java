@@ -1,6 +1,8 @@
-package main.java.com.habitarium.controller.register;
+package com.habitarium.controller.register;
 
 
+import com.habitarium.utility.date.DateUtil;
+import com.habitarium.utility.screen.AlertScreens;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.EventHandler;
@@ -9,8 +11,6 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
-import main.java.com.habitarium.utility.date.DateUtil;
-import main.java.com.habitarium.utility.screen.AlertScreens;
 import main.java.controller.RentController;
 import main.java.dao.PropertyDAO;
 import main.java.dao.RentDAO;
