@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="290.0" prefWidth="250.0" style="-fx-background-color: a52210;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.com.habitarium.controller.screen.FirstLoginScreenController">
+   <children>
+      <Pane prefHeight="133.0" prefWidth="250.0" style="-fx-background-color: #8c1b0d; -fx-background-radius: 15px;" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="2.0">
+         <children>
+            <Label layoutX="15.0" layoutY="2.0" text="Email:" textFill="WHITE">
+               <padding>
+                  <Insets bottom="5.0" top="5.0" />
+               </padding>
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfEmail" layoutX="14.0" layoutY="29.0" prefHeight="26.0" prefWidth="211.0" promptText="exemplo@teste.com" style="-fx-background-color: white; -fx-background-radius: 5px; -fx-border-color: #8c1b0d; -fx-border-radius: 5px;">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+            <Label layoutX="15.0" layoutY="55.0" text="Usuario:" textFill="WHITE">
+               <padding>
+                  <Insets bottom="10.0" top="5.0" />
+               </padding>
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfUser" layoutX="14.0" layoutY="87.0" prefHeight="26.0" prefWidth="211.0" promptText="admin" style="-fx-background-color: white; -fx-background-radius: 5px; -fx-border-color: #8c1b0d; -fx-border-radius: 5px;">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+         </children>
+      </Pane>
+      <Pane layoutX="5.0" layoutY="138.0" prefHeight="133.0" prefWidth="250.0" style="-fx-background-color: #8c1b0d; -fx-background-radius: 15px;" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="138.0">
+         <children>
+            <Label layoutX="14.0" layoutY="55.0" text="Confirmar senha:" textFill="WHITE">
+               <padding>
+                  <Insets bottom="5.0" top="5.0" />
+               </padding>
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="2.0" text="Senha:" textFill="WHITE">
+               <padding>
+                  <Insets bottom="5.0" top="5.0" />
+               </padding>
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnSubmit" layoutX="85.0" layoutY="114.0" minHeight="17.0" minWidth="53.0" mnemonicParsing="false" onAction="#login" prefHeight="32.0" prefWidth="69.0" style="-fx-background-color: ce2812; -fx-background-radius: 10px; -fx-border-color: a4200e; -fx-border-radius: 10px;" text="Enviar" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <PasswordField fx:id="pfPassword" layoutX="14.0" layoutY="29.0" prefHeight="10.0" prefWidth="211.0" promptText="*****" style="-fx-background-color: white; -fx-background-radius: 5px;">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </PasswordField>
+            <PasswordField fx:id="pfPasswordConfirm" layoutX="14.0" layoutY="82.0" prefHeight="26.0" prefWidth="211.0" promptText="*****" style="-fx-background-color: white; -fx-background-radius: 5px;">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </PasswordField>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

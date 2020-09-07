@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="515.0" maxWidth="423.0" minHeight="515.0" minWidth="423.0" prefHeight="515.0" prefWidth="423.0" style="-fx-background-color: a52210;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.com.habitarium.controller.register.RegisterPropertyScreenController">
+   <children>
+      <Pane layoutX="15.0" layoutY="14.0" prefHeight="71.0" prefWidth="410.0" AnchorPane.bottomAnchor="444.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+         <children>
+            <ChoiceBox fx:id="chooseTypeProperty" layoutX="122.0" layoutY="28.0" prefWidth="150.0" style="-fx-background-color: white; -fx-background-radius: 5px;" />
+            <Label layoutX="87.0" layoutY="6.0" prefHeight="17.0" prefWidth="219.0" text="Selecione o tipo de propriedade" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="5.0" />
+         </padding>
+      </Pane>
+      <Pane layoutX="15.0" layoutY="86.0" maxHeight="180.0" maxWidth="410.0" prefHeight="180.0" prefWidth="410.0" style="-fx-background-color: #8c1b0d; -fx-background-radius: 15px;" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+         <padding>
+            <Insets top="5.0" />
+         </padding>
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="21.0" layoutY="34.0" nodeOrientation="LEFT_TO_RIGHT" text="Rua/Av." textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="21.0" layoutY="104.0" nodeOrientation="LEFT_TO_RIGHT" text="Bairro:" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="338.0" layoutY="34.0" nodeOrientation="LEFT_TO_RIGHT" text="N°:" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="214.0" layoutY="104.0" nodeOrientation="LEFT_TO_RIGHT" text="Cidade:" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtStreet" layoutX="21.0" layoutY="55.0" prefHeight="25.0" prefWidth="292.0" style="-fx-background-color: white; -fx-background-radius: 5px;">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <TextField fx:id="txtNumber" layoutX="322.0" layoutY="55.0" prefHeight="25.0" prefWidth="56.0" style="-fx-background-color: white; -fx-background-radius: 5px;">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <TextField fx:id="txtNeighbour" layoutX="21.0" layoutY="123.0" prefHeight="25.0" prefWidth="165.0" style="-fx-background-color: white; -fx-border-radius: 5px;">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+            <TextField fx:id="txtCity" layoutX="214.0" layoutY="123.0" prefHeight="25.0" prefWidth="165.0" style="-fx-background-color: white; -fx-background-radius: 5px;">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+         </children>
+      </Pane>
+      <Pane layoutX="15.0" layoutY="266.0" prefHeight="144.0" prefWidth="403.0" style="-fx-background-color: #8c1b0d; -fx-background-radius: 15px;" AnchorPane.bottomAnchor="126.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+         <children>
+            <Label layoutX="217.0" layoutY="69.0" text="Apartamento:" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="23.0" layoutY="14.0" text="Condominio:" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="69.0" text="Bloco:" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtCondo" layoutX="24.0" layoutY="34.0" prefHeight="25.0" prefWidth="355.0" style="-fx-background-color: white; -fx-background-radius: 5px;">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+            <TextField fx:id="txtApartment" layoutX="216.0" layoutY="86.0" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: white; -fx-background-radius: 5px;">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+            <TextField fx:id="txtBlockCondo" layoutX="24.0" layoutY="86.0" prefHeight="25.0" prefWidth="165.0" style="-fx-background-color: white; -fx-background-radius: 5px;">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+         </children>
+      </Pane>
+      <Button fx:id="btnSave" layoutX="127.0" layoutY="416.0" mnemonicParsing="false" onAction="#save" prefHeight="50.0" prefWidth="180.0" style="-fx-background-color: ce2812; -fx-background-radius: 1.5em; -fx-border-color: a4200e; -fx-border-radius: 1.5em;" text="Salvar" textFill="WHITE" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="120.0" AnchorPane.rightAnchor="120.0" AnchorPane.topAnchor="415.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <graphic>
+            <ImageView fitHeight="14.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../icon/save_icon_white_test.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="540.0" maxWidth="700.0" prefHeight="540.0" prefWidth="700.0" style="-fx-background-color: a52210;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.com.habitarium.controller.register.RegisterRentScreenController">
+   <children>
+      <GridPane prefHeight="541.0" prefWidth="701.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Pane prefHeight="490.0" prefWidth="320.0" style="-fx-background-color: #8c1b0d; -fx-background-radius: 15px;">
+               <GridPane.margin>
+                  <Insets bottom="20.0" left="15.0" right="5.0" top="20.0" />
+               </GridPane.margin>
+               <children>
+                  <Label layoutX="75.0" layoutY="20.0" prefHeight="26.0" prefWidth="181.0" text="CADASTRO DE INQUILINO" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="60.0" text="Nome Completo:" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="5.0" />
+                     </padding>
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="110.0" prefHeight="38.0" prefWidth="136.0" text="Data de nascimento:" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="5.0" top="15.0" />
+                     </padding>
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="175.0" text="CPF:" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="5.0" top="15.0" />
+                     </padding>
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="239.0" text="RG:" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="5.0" top="15.0" />
+                     </padding>
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="303.0" text="Telefone 1:" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="5.0" top="15.0" />
+                     </padding>
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="170.0" layoutY="303.0" text="Telefone 2:" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="5.0" top="15.0" />
+                     </padding>
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="367.0" text="Gênero:" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="5.0" top="15.0" />
+                     </padding>
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtName" layoutX="10.0" layoutY="85.0" prefHeight="26.0" prefWidth="310.0" style="-fx-background-color: white; -fx-background-radius: 5px; -fx-border-color: #8c1b0d; -fx-border-radius: 5px;">
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                  </TextField>
+                  <DatePicker fx:id="datePBorn" cache="true" cacheHint="QUALITY" depthTest="ENABLE" editable="false" layoutX="10.0" layoutY="150.0" prefHeight="0.0" prefWidth="180.0" promptText="__/__/____" showWeekNumbers="true" style="-fx-background-color: white; -fx-background-radius: 5px;">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </DatePicker>
+                  <TextField fx:id="txtCpf" layoutX="10.0" layoutY="213.0" prefHeight="26.0" prefWidth="180.0" promptText="___.___.___-__" style="-fx-background-color: white; -fx-background-radius: 5px; -fx-border-color: #8c1b0d; -fx-border-radius: 5px;">
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                  </TextField>
+                  <TextField fx:id="txtRg" layoutX="10.0" layoutY="277.0" prefHeight="26.0" prefWidth="180.0" promptText="_________-_" style="-fx-background-color: white; -fx-background-radius: 5px; -fx-border-color: #8c1b0d; -fx-border-radius: 5px;">
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                  </TextField>
+                  <TextField fx:id="txtTel1" layoutX="10.0" layoutY="341.0" prefHeight="26.0" prefWidth="155.0" promptText="+55(55) 55555-5555" style="-fx-background-color: white; -fx-background-radius: 5px; -fx-border-color: #8c1b0d; -fx-border-radius: 5px;">
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                  </TextField>
+                  <TextField fx:id="txtTel2" layoutX="170.0" layoutY="341.0" prefHeight="26.0" prefWidth="155.0" promptText="+55(55) 55555-5555" style="-fx-background-color: white; -fx-background-radius: 5px; -fx-border-color: #8c1b0d; -fx-border-radius: 5px;">
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                  </TextField>
+                  <ComboBox fx:id="cbGender" layoutX="10.0" layoutY="405.0" prefHeight="0.0" prefWidth="150.0" style="-fx-background-color: white; -fx-background-radius: 5px;">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ComboBox>
+               </children>
+            </Pane>
+            <Pane prefHeight="490.0" prefWidth="320.0" style="-fx-background-color: #8c1b0d; -fx-background-radius: 15px;" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="20.0" left="5.0" right="15.0" top="20.0" />
+               </GridPane.margin>
+               <children>
+                  <Label layoutX="75.0" layoutY="20.0" prefHeight="26.0" prefWidth="181.0" text="CADASTRO DE ALUGUEL" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="cbProperty" layoutX="10.0" layoutY="83.0" prefHeight="0.0" prefWidth="310.0" promptText="Selecione a Propriedade" style="-fx-background-color: white; -fx-background-radius: 5px;">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ComboBox>
+                  <Label layoutX="10.0" layoutY="111.0" text="Valor do aluguel:" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="5.0" top="15.0" />
+                     </padding>
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="175.0" text="Data de Entrada:" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="5.0" top="15.0" />
+                     </padding>
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="188.0" layoutY="175.0" text="Data de Saída:" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="5.0" top="15.0" />
+                     </padding>
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="239.0" text="Data do reajuste anual:" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="5.0" top="15.0" />
+                     </padding>
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="188.0" layoutY="111.0" text="Dia do Vencimento:" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="5.0" top="15.0" />
+                     </padding>
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtRentValue" layoutX="10.0" layoutY="149.0" prefHeight="26.0" prefWidth="100.0" promptText="R$" style="-fx-background-color: white; -fx-background-radius: 5px; -fx-border-color: #8c1b0d; -fx-border-radius: 5px;">
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                  </TextField>
+                  <Spinner fx:id="spPayDay" layoutX="188.0" layoutY="149.0" prefHeight="26.0" prefWidth="85.0" style="-fx-background-color: white; -fx-background-radius: 5px;">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Spinner>
+                  <DatePicker fx:id="datePEntrance" editable="false" layoutX="10.0" layoutY="213.0" prefHeight="26.0" prefWidth="136.0" promptText="__/__/____" showWeekNumbers="true" style="-fx-background-color: white; -fx-background-radius: 5px;">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </DatePicker>
+                  <DatePicker fx:id="datePExit" editable="false" layoutX="188.0" layoutY="213.0" prefHeight="26.0" prefWidth="136.0" promptText="__/__/____" showWeekNumbers="true" style="-fx-background-color: white; -fx-background-radius: 5px;">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </DatePicker>
+                  <DatePicker fx:id="datePReadjustment" editable="false" layoutX="10.0" layoutY="277.0" prefHeight="26.0" prefWidth="136.0" promptText="__/__/____" showWeekNumbers="true" style="-fx-background-color: white; -fx-background-radius: 5px;">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </DatePicker>
+                  <Button fx:id="btnSave" layoutX="94.0" layoutY="375.0" mnemonicParsing="false" onAction="#save" prefHeight="60.0" prefWidth="143.0" style="-fx-background-color: ce2812; -fx-background-radius: 1.5em; -fx-border-color: a4200e; -fx-border-radius: 1.5em;" text="Salvar" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="10.0" />
+                     </padding>
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../icon/save_icon_white_test.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Pane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
