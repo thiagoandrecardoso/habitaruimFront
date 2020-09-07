@@ -82,7 +82,7 @@ public class SearchRentScreenController implements Initializable, Reloadable {
         if(lvRent.getSelectionModel().getSelectedIndex() != -1){
             Rent selectedItemRent = lvRent.getSelectionModel().getSelectedItem();
             try {
-                openEditRentScreens.loadScreen("/main/resources/com/habitarium/screen/edit/editRent", "Editor de Aluguéis", selectedItemRent);
+                openEditRentScreens.loadScreen("screen/edit/editRent", "Editor de Aluguéis", selectedItemRent);
             } catch (IOException e) {
                 e.printStackTrace();
             }

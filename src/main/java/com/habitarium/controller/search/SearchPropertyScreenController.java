@@ -79,7 +79,7 @@ public class SearchPropertyScreenController implements Initializable, Reloadable
         if(listViewPane.getSelectionModel().getSelectedIndex() != -1){
             Property selectedItemProperty = listViewPane.getSelectionModel().getSelectedItem();
             try {
-                openScreens.loadScreen("/main/resources/com/habitarium/screen/edit/editProperty", "Editor de propriedade", selectedItemProperty);
+                openScreens.loadScreen("screen/edit/editProperty", "Editor de propriedade", selectedItemProperty);
             } catch (IOException e) {
                 e.printStackTrace();
             }

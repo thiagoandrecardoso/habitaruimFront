@@ -186,7 +186,7 @@ public class EditRentController implements Initializable, Reloadable {
     @FXML
     private void registerPayment() {
         try {
-            openScreens.loadScreen("/main/resources/com/habitarium/screen/register/registerPayment", "Registrar Pagamento", rent);
+            openScreens.loadScreen("screen/register/registerPayment", "Registrar Pagamento", rent);
         } catch (IOException e) {
             e.printStackTrace();
         }
