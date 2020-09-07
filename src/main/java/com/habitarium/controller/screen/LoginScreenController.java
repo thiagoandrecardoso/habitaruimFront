@@ -48,7 +48,7 @@ public class LoginScreenController implements Initializable {
                 OpenScreens openFirstLogin = new OpenFirstLoginScreen();
                 try {
                     CloseScreen();
-                    openFirstLogin.loadScreen("/main/resources/com/habitarium/screen/firstLoginScreen", "Login", user);
+                    openFirstLogin.loadScreen("screen/firstLoginScreen", "Login", user);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -61,7 +61,7 @@ public class LoginScreenController implements Initializable {
                 if (passwordField.getText().equals(user.getPassword())) {
                     try {
                         CloseScreen();
-                        ScreenUtils.switchScreen("/main/resources/com/habitarium/screen/mainScreen", "Registro de Propriedade");
+                        ScreenUtils.switchScreen("screen/mainScreen", "Registro de Propriedade");
                     } catch (IOException e) {
                         e.printStackTrace();
                     }

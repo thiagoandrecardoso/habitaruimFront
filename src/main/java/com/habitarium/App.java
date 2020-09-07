@@ -15,15 +15,15 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        Scene scene = new Scene(loadFXML());
+        Scene scene = new Scene(loadFXML("screen/loginScreen"));
         stage.setScene(scene);
         stage.setTitle("Login");
         stage.setResizable(false);
         stage.show();
     }
 
-    private static Parent loadFXML() throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("/main/resources/com/habitarium/screen/loginScreen" + ".fxml"));
+    private static Parent loadFXML(String screen) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(screen + ".fxml"));
         return fxmlLoader.load();
     }
 

@@ -61,7 +61,7 @@ public class FirstLoginScreenController implements Initializable {
             } else {
                 closeScreen();
                 try {
-                    ScreenUtils.switchScreen("/main/resources/com/habitarium/screen/mainScreen", "Registro de Propriedade");
+                    ScreenUtils.switchScreen("screen/mainScreen", "Registro de Propriedade");
                 } catch (IOException e) {
                     e.printStackTrace();
                 }

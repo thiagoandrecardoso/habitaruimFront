@@ -60,8 +60,7 @@ public class MainScreenController implements Initializable, Reloadable {
     @FXML
     public void registerProperty() {
         try {
-//            ScreenUtils.switchScreen("screen/register/registerPropertyScreen", "Registro de Propriedade");
-            ScreenUtils.switchScreen("/main/resources/com/habitarium/screen/register/registerPropertyScreen", "Registro de Propriedade");
+            ScreenUtils.switchScreen("screen/register/registerPropertyScreen", "Registro de Propriedade");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -72,7 +71,7 @@ public class MainScreenController implements Initializable, Reloadable {
         openScreen = new OpenRegisterRentScreen();
         openScreen.setReload(this);
         try {
-            openScreen.loadScreen("/main/resources/com/habitarium/screen/register/registerRentScreen", "Registro de Aluguel", null);
+            openScreen.loadScreen("screen/register/registerRentScreen", "Registro de Aluguel", null);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -81,7 +80,7 @@ public class MainScreenController implements Initializable, Reloadable {
     @FXML
     public void setBtnInfo() {
         try {
-            ScreenUtils.switchScreen("/main/resources/com/habitarium/screen/utils/developInfo", "Informações dos Desenvolvedores");
+            ScreenUtils.switchScreen("screen/utils/developInfo", "Informações dos Desenvolvedores");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -91,7 +90,7 @@ public class MainScreenController implements Initializable, Reloadable {
     public void searchProperty() {
         openScreen = new OpenSearchPropertyScreen();
         try {
-            openScreen.loadScreen("/main/resources/com/habitarium/screen/search/searchProperty", "Procura de Propriedades", null);
+            openScreen.loadScreen("screen/search/searchProperty", "Procura de Propriedades", null);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -102,7 +101,7 @@ public class MainScreenController implements Initializable, Reloadable {
         openScreen = new OpenSearchRentScreen();
         openScreen.setReload(this);
         try {
-            openScreen.loadScreen("/main/resources/com/habitarium/screen/search/searchRent", "Procura de Aluguéis", null);
+            openScreen.loadScreen("screen/search/searchRent", "Procura de Aluguéis", null);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -117,7 +116,7 @@ public class MainScreenController implements Initializable, Reloadable {
 
             openScreen.setReload(this);
             try {
-                openScreen.loadScreen("/main/resources/com/habitarium/screen/edit/editRent", "Editor de Aluguéis", selectedItemRent);
+                openScreen.loadScreen("screen/edit/editRent", "Editor de Aluguéis", selectedItemRent);
             } catch (IOException e) {
                 e.printStackTrace();
             }
