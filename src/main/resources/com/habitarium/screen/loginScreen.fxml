@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="285.0" style="-fx-background-color: a52210; -fx-padding: 1em;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.com.habitarium.controller.screen.LoginScreenController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="285.0" style="-fx-background-color: a52210; -fx-padding: 1em;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.habitarium.controller.screen.LoginScreenController">
    <children>
       <Pane layoutX="52.0" layoutY="23.0" prefHeight="323.0" prefWidth="200.0" style="-fx-background-color: #8c1b0d; -fx-background-radius: 15px;" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="15.0">
          <children>

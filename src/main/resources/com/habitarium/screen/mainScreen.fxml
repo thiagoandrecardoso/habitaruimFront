@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="503.0" prefWidth="768.0" style="-fx-background-color: a52210;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.com.habitarium.controller.screen.MainScreenController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="503.0" prefWidth="768.0" style="-fx-background-color: a52210;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.habitarium.controller.screen.MainScreenController">
    <children>
       <Button id=".button" fx:id="registerPropertyBtn" layoutX="14.0" layoutY="403.0" mnemonicParsing="false" onAction="#registerProperty" prefHeight="85.0" prefWidth="230.0" style="-fx-background-color: ce2812; -fx-background-radius: 1em; -fx-border-color: a4200e; -fx-border-radius: 1em;" text="CADASTRAR PROPRIEDADE" textFill="WHITE" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="14.0">
          <cursor>

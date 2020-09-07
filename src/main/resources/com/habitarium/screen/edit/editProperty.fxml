@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="515.0" maxWidth="423.0" minHeight="515.0" minWidth="423.0" prefHeight="515.0" prefWidth="423.0" style="-fx-background-color: a52210;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.com.habitarium.controller.edit.EditPropertyController">
+<AnchorPane maxHeight="515.0" maxWidth="423.0" minHeight="515.0" minWidth="423.0" prefHeight="515.0" prefWidth="423.0" style="-fx-background-color: a52210;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.habitarium.controller.edit.EditPropertyController">
    <children>
       <Label fx:id="txtLabel" layoutX="288.0" layoutY="143.0" text="Loren" />
    </children>

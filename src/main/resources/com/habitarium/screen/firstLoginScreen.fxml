@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="290.0" prefWidth="250.0" style="-fx-background-color: a52210;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.com.habitarium.controller.screen.FirstLoginScreenController">
+<AnchorPane prefHeight="290.0" prefWidth="250.0" style="-fx-background-color: a52210;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.habitarium.controller.screen.FirstLoginScreenController">
    <children>
       <Pane prefHeight="133.0" prefWidth="250.0" style="-fx-background-color: #8c1b0d; -fx-background-radius: 15px;" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="2.0">
          <children>
