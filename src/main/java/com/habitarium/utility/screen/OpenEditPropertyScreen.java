@@ -9,7 +9,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-import main.java.entity.Property;
+import com.habitarium.entity.Property;
 
 import java.io.IOException;
 import java.net.URL;

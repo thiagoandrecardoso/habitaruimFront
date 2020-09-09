@@ -11,8 +11,8 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
-import main.java.dao.RentDAO;
-import main.java.entity.Rent;
+import com.habitarium.dao.RentDAO;
+import com.habitarium.entity.Rent;
 import me.xdrop.fuzzywuzzy.FuzzySearch;
 import me.xdrop.fuzzywuzzy.model.BoundExtractedResult;
 

@@ -13,8 +13,8 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyCode;
 import javafx.stage.Stage;
-import main.java.dao.UserDAO;
-import main.java.entity.User;
+import com.habitarium.dao.UserDAO;
+import com.habitarium.entity.User;
 
 import java.io.IOException;
 import java.net.URL;

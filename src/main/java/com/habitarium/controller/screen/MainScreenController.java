@@ -8,10 +8,10 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
-import main.java.controller.MonthPaidController;
-import main.java.dao.RentDAO;
-import main.java.entity.MonthPaid;
-import main.java.entity.Rent;
+import com.habitarium.controller.MonthPaidController;
+import com.habitarium.dao.RentDAO;
+import com.habitarium.entity.MonthPaid;
+import com.habitarium.entity.Rent;
 
 import java.io.IOException;
 import java.net.URL;

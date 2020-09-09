@@ -6,8 +6,8 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-import main.java.dao.PropertyDAO;
-import main.java.entity.Property;
+import com.habitarium.dao.PropertyDAO;
+import com.habitarium.entity.Property;
 
 
 public class EditPropertyController {

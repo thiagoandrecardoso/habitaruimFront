@@ -10,8 +10,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-import main.java.dao.PropertyDAO;
-import main.java.entity.Property;
+import com.habitarium.dao.PropertyDAO;
+import com.habitarium.entity.Property;
 
 import java.net.URL;
 import java.util.ResourceBundle;

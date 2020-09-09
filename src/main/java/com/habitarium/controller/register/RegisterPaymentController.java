@@ -11,10 +11,10 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
-import main.java.controller.MonthPaidController;
-import main.java.dao.MonthPaidDAO;
-import main.java.entity.MonthPaid;
-import main.java.entity.Rent;
+import com.habitarium.controller.MonthPaidController;
+import com.habitarium.dao.MonthPaidDAO;
+import com.habitarium.entity.MonthPaid;
+import com.habitarium.entity.Rent;
 
 import java.net.URL;
 import java.util.Date;
