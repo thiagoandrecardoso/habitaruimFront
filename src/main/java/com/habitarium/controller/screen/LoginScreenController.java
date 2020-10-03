@@ -61,7 +61,7 @@ public class LoginScreenController implements Initializable {
                 if (passwordField.getText().equals(user.getPassword())) {
                     try {
                         CloseScreen();
-                        ScreenUtils.switchScreen("screen/mainScreen", "Registro de Propriedade");
+                        ScreenUtils.switchScreen("screen/mainScreen", "Home");
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
