@@ -1,8 +1,8 @@
 package com.habitarium.controller.register;
 
+import com.habitarium.dao.PropertyDAO;
+import com.habitarium.entity.Property;
 import com.habitarium.utility.screen.AlertScreens;
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -10,8 +10,6 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-import com.habitarium.dao.PropertyDAO;
-import com.habitarium.entity.Property;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -73,37 +71,35 @@ public class RegisterPropertyScreenController implements Initializable {
                 "Apartamento", "Casa", "Condomínio")
         );
 
-        chooseTypeProperty.getSelectionModel().selectedIndexProperty().addListener(new ChangeListener<Number>() {
-            public void changed(ObservableValue ov, Number value, Number new_value) {
-                if (new_value.intValue() == 0) {
-                    txtCity.setDisable(false);
-                    txtNeighbour.setDisable(false);
-                    txtNumber.setDisable(false);
-                    txtStreet.setDisable(false);
-                    txtApartment.setDisable(false);
-                    txtCondo.setDisable(false);
-                    txtBlockCondo.setDisable(false);
-                } else if (new_value.intValue() == 1) {
-                    txtApartment.setDisable(true);
-                    txtCondo.setDisable(true);
-                    txtBlockCondo.setDisable(true);
-                    txtCity.setDisable(false);
-                    txtNeighbour.setDisable(false);
-                    txtNumber.setDisable(false);
-                    txtStreet.setDisable(false);
-                    txtCondo.setText("");
-                    txtBlockCondo.setText("");
-                    txtApartment.setText("");
-                } else if (new_value.intValue() == 2) {
-                    txtCity.setDisable(false);
-                    txtNeighbour.setDisable(false);
-                    txtNumber.setDisable(false);
-                    txtStreet.setDisable(false);
-                    txtApartment.setDisable(true);
-                    txtCondo.setDisable(false);
-                    txtBlockCondo.setDisable(false);
-                    txtApartment.setText("");
-                }
+        chooseTypeProperty.getSelectionModel().selectedIndexProperty().addListener((ov, value, new_value) -> {
+            if (new_value.intValue() == 0) {
+                txtCity.setDisable(false);
+                txtNeighbour.setDisable(false);
+                txtNumber.setDisable(false);
+                txtStreet.setDisable(false);
+                txtApartment.setDisable(false);
+                txtCondo.setDisable(false);
+                txtBlockCondo.setDisable(false);
+            } else if (new_value.intValue() == 1) {
+                txtApartment.setDisable(true);
+                txtCondo.setDisable(true);
+                txtBlockCondo.setDisable(true);
+                txtCity.setDisable(false);
+                txtNeighbour.setDisable(false);
+                txtNumber.setDisable(false);
+                txtStreet.setDisable(false);
+                txtCondo.setText("");
+                txtBlockCondo.setText("");
+                txtApartment.setText("");
+            } else if (new_value.intValue() == 2) {
+                txtCity.setDisable(false);
+                txtNeighbour.setDisable(false);
+                txtNumber.setDisable(false);
+                txtStreet.setDisable(false);
+                txtApartment.setDisable(true);
+                txtCondo.setDisable(false);
+                txtBlockCondo.setDisable(false);
+                txtApartment.setText("");
             }
         });
     }

@@ -94,31 +94,25 @@ public class RegisterPaymentController implements Initializable {
                 rent.getEntranceDate(), new Date());
         List<String> monthsStr = lateMonths.stream().map(MonthPaid::dateString).collect(Collectors.toList());
         cbOwedMonths.setItems(FXCollections.observableList(monthsStr));
-        cbOwedMonths.valueProperty().addListener(new ChangeListener<String>() {
-            @Override
-            public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
-                if (!newValue.equals("")) {
-                    tfNewValue.setText(String.valueOf(rent.getValue()));
-                }
+        cbOwedMonths.valueProperty().addListener((observable, oldValue, newValue) -> {
+            if (!newValue.equals("")) {
+                tfNewValue.setText(String.valueOf(rent.getValue()));
             }
         });
     }
 
     public void setRbAnticipatePayment() {
-        rbAnticipatePayment.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-                if (rbAnticipatePayment.isSelected()) {
-                    choBAdvancePay.setDisable(false);
-                    choBAdvancePay.getSelectionModel().selectFirst();
-                    cbOwedMonths.setDisable(true);
-                    tfNewValue.setText(String.valueOf(rent.getValue()));
-                } else {
-                    choBAdvancePay.setDisable(true);
-                    choBAdvancePay.getSelectionModel().select(null);
-                    cbOwedMonths.setDisable(false);
-                    cbOwedMonths.getSelectionModel().selectFirst();
-                }
+        rbAnticipatePayment.setOnAction(event -> {
+            if (rbAnticipatePayment.isSelected()) {
+                choBAdvancePay.setDisable(false);
+                choBAdvancePay.getSelectionModel().selectFirst();
+                cbOwedMonths.setDisable(true);
+                tfNewValue.setText(String.valueOf(rent.getValue()));
+            } else {
+                choBAdvancePay.setDisable(true);
+                choBAdvancePay.getSelectionModel().select(null);
+                cbOwedMonths.setDisable(false);
+                cbOwedMonths.getSelectionModel().selectFirst();
             }
         });
     }
